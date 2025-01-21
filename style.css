@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Francois+One&family=Kdam+Thmor+Pro&Martian+Mono:wght@300;700&family=Merriweather&family=Playfair+Display&family=Roboto:wght@400;700&family=Rubik:wght@400&display=swap");
+
+body {
+  overflow: hidden;
+  background-color: #fcfcfc;
+  margin: 0;
+  padding: 0;
+}
+
+.magazine-viewport {
+  overflow: hidden;
+ width: 595px;
+  height: 842px;
+}
+
+.magazine-viewport .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+}
+
+.magazine-viewport .magazine {
+  width: 595px;
+  height: 842px;
+  left: -461px;
+  top: -300px;
+}
+.page p1 odd{
+  
+}
+
+.magazine-viewport .page {
+  width: 595px;
+  height: 842px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.magazine .page {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.magazine-viewport .page img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+}
+
+.magazine-viewport .shadow {
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  -moz-transition: -moz-box-shadow 0.5s;
+  -o-transition: -webkit-box-shadow 0.5s;
+  -ms-transition: -ms-box-shadow 0.5s;
+
+  -webkit-box-shadow: 0 0 20px #ccc;
+  -moz-box-shadow: 0 0 20px #ccc;
+  -o-box-shadow: 0 0 20px #ccc;
+  -ms-box-shadow: 0 0 20px #ccc;
+  box-shadow: 0 0 20px #ccc;
+}
+
+.cover {
+  width: 595px;
+  height: 842px;
+  overflow: hidden;
+  background: #c5d6f7;
+}
+
+.cover h1 {
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.cover h3 {
+  font-style: normal;
+  margin: 10px 40px;
+}
+
+.cover-text {
+  position: absolute;
+}
+
+.cover img {
+  position: absolute;
+  width: 470px;
+  height: 600px;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+.title-container {
+  margin: 0;
+  margin-top: px;
+  height: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px;
+}
+
+.page-wrap {
+  background-color: #f9fafe !important;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #111;
+}
+
+.left-page-overlay,
+.right-page-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.left-page-overlay {
+  background: linear-gradient(to right, #ffffff00 92%, #ccc 100%);
+  border-right: solid 2.5px #bbb;
+}
+
+.right-page-overlay {
+  background: linear-gradient(to left, #ffffff00 92%, #ccc 100%);
+  border-left: solid 2.5px #bbb;
+}
+
+.left-page-container {
+  padding: 30px 30px 30px 30px;
+}
+
+.right-page-container {
+  padding: 30px 30px 30px 30px;
+}
+
+.column {
+  width: 200px;
+}
+
+h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Kanit", ;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  font-style: italic;
+}
+
+article {
+  margin-top: -16px;
+  background-color: #ffffff00;
+  overflow: hidden;
+  flex: 1;
+  column-count: 2;
+}
+
+.no-cols {
+  column-count: unset;
+}
+
+p {
+  font-family: "Merriweather", serif;
+  font-size: 10px;
+  line-height: 1.6;
+  margin: 0;
+  text-indent: 24px;
+}
+
+.no-indent {
+  text-indent: 0;
+}
+
+aside p {
+  font-family: "Francois One", sans-serif;
+  font-weight: bold;
+  font-size: 19px;
+  margin: 0;
+  padding: 0 6px;
+  line-height: 1.4;
+  text-indent: 0;
+}
+
+.header {
+  height: 20px;
+}
+
+.footer {
+  height: 25px;
+  background-color: #ffffff00;
+}
+
+.dropcap {
+  font-family: "Playfair Display", serif;
+  font-size: 80px;
+  float: left;
+  line-height: 1;
+  margin-right: 4px;
+}
+
+.dropcap:before,
+.dropcap:after {
+  content: "";
+  display: block;
+}
+.dropcap:before {
+  margin-bottom: -14px;
+}
+.dropcap:after {
+  margin-top: -4px;
+}
+
+.first-line {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.page-num-left,
+.page-num-right {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  float: right;
+  margin: 0px 18px;
+  font-weight: bold;
+}
+
+.title-page-num {
+  position: absolute;
+  color: #f9fafe;
+  bottom: 6px;
+  margin-bottom: 6px;
+}
+
+.page-num-left {
+  float: left;
+}
+
+.page-num-right {
+  float: right;
+}
+
+.quote-line {
+  border-top: 0.5px solid #999;
+  width: 170px;
+  margin: 10px 5px;
+  text-indent: 0;
+}
+
+.col1,
+.col2 {
+  display: table-cell;
+  vertical-align: top;
+  padding: 10px;
+  width: 50%;
+}
+.col1:before,
+.col2:before {
+  float: right;
+  width: 1px;
+  height: 112px;
+  content: "";
+}
+.col2:before {
+  float: left;
+}
+.quote-block {
+  float: right;
+  clear: right;
+  width: 110px;
+  height: 210px;
+  position: relative;
+}
+.quote-block img {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.col2 p:first-child:before {
+  content: "";
+  float: left;
+  clear: left;
+  width: 88px;
+  height: 210px;
+  margin: 0px 10px 10px -17.5px;
+  border-radius: 0 110px 110px 0;
+}
+
+.quote-block aside {
+  width: 200px;
+  height: 200px;
+}
+
+.quote-block aside p {
+  font-size: 18px;
+}
+
+.bottom-quote {
+  position: absolute;
+  bottom: 10px;
+  padding-right: 65px;
+}
+
+.bottom-image {
+  position: absolute;
+  bottom: 70px;
+  right: 15px;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+.back-cover {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #c5d6f7;
+}
+
+.next-btn,
+.prev-btn {
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  border: none;
+  padding: 8px 16px;
+  font-size: 21px;
+}
+
+.next-btn:hover,
+.prev-btn:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.next-btn:focus,
+.prev-btn:focus {
+  outline: none;
+}
+
+.controls {
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+a:focus {
+  outline: none;
+}
+
+.back-cover p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  position: absolute;
+  text-align: center;
+  bottom: 50px;
+  padding: 5px 50px;
+  font-size: 12px;
+}
